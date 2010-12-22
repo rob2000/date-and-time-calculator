@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
-</LinearLayout>
+<TableLayout
+  android:id="@+id/TableLayoutCalculator"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <TableRow android:id="@+id/ButtonRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <Button android:text="@+id/Button7" android:id="@+id/Button7" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    <Button android:text="@+id/Button8" android:id="@+id/Button8" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    <Button android:text="@+id/Button9" android:id="@+id/Button9" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+  </TableRow>
+  <TableRow android:id="@+id/ButtonRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <Button android:text="@+id/Button7" android:text="@string/7_digit" android:id="@+id/Button7" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    <Button android:text="@+id/Button8" android:id="@+id/Button8" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    <Button android:text="@+id/Button9" android:id="@+id/Button9" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+  </TableRow>
+  <TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+  <TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+
+</TableLayout>
