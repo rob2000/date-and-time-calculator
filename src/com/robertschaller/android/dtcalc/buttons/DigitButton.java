@@ -2,6 +2,7 @@ package com.robertschaller.android.dtcalc.buttons;
 
 import java.util.Date;
 
+import com.robertschaller.android.dtcalc.Calculator;
 import com.robertschaller.android.dtcalc.DateAndTimeCalculatorActivity;
 import com.robertschaller.android.dtcalc.R;
 
@@ -13,25 +14,52 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * The Class DigitButton.
+ */
 public class DigitButton extends Button {
 
+  /** The value. */
   protected int value;
   
+  /**
+   * Instantiates a new digit button.
+   *
+   * @param context the context
+   * @param attrs the attrs
+   * @param defStyle the def style
+   */
   public DigitButton(Context context, AttributeSet attrs, int defStyle) {
     super( context, attrs, defStyle );
     init( context, attrs );
   }
 
+  /**
+   * Instantiates a new digit button.
+   *
+   * @param context the context
+   * @param attrs the attrs
+   */
   public DigitButton(Context context, AttributeSet attrs) {
     super( context, attrs );
     init( context, attrs );
   }
 
+  /**
+   * Instantiates a new digit button.
+   *
+   * @param context the context
+   */
   public DigitButton(Context context) {
     super( context );
-    // TODO Auto-generated constructor stub
   }
 
+  /**
+   * Inits the.
+   *
+   * @param context the context
+   * @param attrs the attrs
+   */
   protected void init( Context context, AttributeSet attrs ){
     
     TypedArray attributes = context.obtainStyledAttributes( attrs, R.styleable.DigitButton );
@@ -40,15 +68,9 @@ public class DigitButton extends Button {
     setOnClickListener( new OnClickListener() {      
       @Override
       public void onClick(View v) {
-        DateAndTimeCalculatorActivity.display.setText( Integer.toString( value ) );
+        Calculator.DISPLAY.setText( Integer.toString( value ) );
       }
     });
   }
 
-  @Override
-  public boolean onKeyDown(int keyCode, KeyEvent event) {
-    
-    return super.onKeyDown( keyCode, event );
-  }
-  
 }
