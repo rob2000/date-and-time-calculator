@@ -25,6 +25,9 @@
     <string name="mem_reset">MR</string>
     <string name="mem_store">MS</string>
     <string name="mem_add">M+</string>
+    <string name="clear_last">R</string>
+    <string name="clear_all">C</string>
+    <string name="clear_display">CE</string>
     <string name="unit_second">s</string>
     <string name="unit_minute">m</string>
     <string name="unit_hour">h</string>
@@ -37,10 +40,18 @@
 
     <!-- display -->
 
-    <string name="display_empty">0.</string>
+    <string name="display_empty">0</string>
     
     <declare-styleable name="DigitButton">
 			<attr name="value" format="integer"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ActionButton">
+      <attr name="action" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="OperatorButton">
+      <attr name="operation" format="string"/>
     </declare-styleable>
 
 </resources>

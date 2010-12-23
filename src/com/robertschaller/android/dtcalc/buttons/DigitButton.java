@@ -64,7 +64,7 @@ public class DigitButton extends Button {
     setOnClickListener( new OnClickListener() {      
       @Override
       public void onClick(View v) {
-        Calculator.DISPLAY.setText( Integer.toString( value ) );
+        Calculator.DISPLAY.setText( Calculator.DISPLAY.getText() + Integer.toString( value ) );
       }
     });
   }

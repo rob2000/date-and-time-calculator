@@ -6,7 +6,28 @@
 	android:orientation="vertical"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:rs="http://schemas.android.com/apk/res/com.robertschaller.android.dtcalc" >
-	<TextView android:id="@+id/CalculatorDisplay" android:text="@string/display_empty" style="@style/Display" />
+	<TextView
+	  android:id="@+id/CalculatorDisplay"
+	  android:text="@string/display_empty"
+	  android:maxLines="1"
+	  android:maxLength="10"
+	  style="@style/Display" />
+  <LinearLayout android:id="@+id/ButtonsRow0"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <com.robertschaller.android.dtcalc.buttons.ActionButton
+      android:text="@string/clear_last"
+      android:id="@+id/ButtonClearLast"
+      style="@style/ClearButton" />
+    <com.robertschaller.android.dtcalc.buttons.ActionButton
+      android:text="@string/clear_display"
+      android:id="@+id/ButtonClearDisplay"
+      style="@style/ClearButton" />
+    <com.robertschaller.android.dtcalc.buttons.ActionButton
+      android:text="@string/clear_all"
+      android:id="@+id/ButtonClearAll"
+      style="@style/ClearButton" />
+  </LinearLayout>	  
 	<LinearLayout android:id="@+id/ButtonsRow1"
 		android:layout_width="wrap_content" android:layout_height="wrap_content"
 		android:orientation="horizontal">

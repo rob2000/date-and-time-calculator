@@ -27,5 +27,21 @@ public class Display {
   public void setText( String text ){
     textView.setText( text );
   }
+
+  /**
+   * Gets the text.
+   *
+   * @return the text
+   */
+  public String getText() {
+    return (String) textView.getText();
+  }
+
+  /**
+   * Clear.
+   */
+  public void clear(){
+    textView.setText( "" );
+  }
   
 }
