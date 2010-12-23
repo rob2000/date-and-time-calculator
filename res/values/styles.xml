@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- buttons -->
+
+  <style name="DigitButton" parent="@android:style/Widget.Button">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:width">50dp</item>
+  </style>
+  <style name="MemButton" parent="@style/DigitButton">
+  </style>
+  <style name="UnitButton" parent="@style/DigitButton">
+  </style>
+  <style name="OperationButton" parent="@style/DigitButton">
+  </style>
+  
+  <!-- display -->
+  
+  <style name="Display" parent="@android:style/Widget.TextView">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:height">100dp</item>
+    <item name="android:textSize">60dp</item>
+    <item name="android:gravity">right</item>
+  </style>
+</resources>
