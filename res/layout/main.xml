@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/TableLayoutCalculator"
-	android:layout_width="wrap_content" android:layout_height="fill_parent"
-	android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+  android:id="@+id/TableLayoutCalculator"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:rs="http://schemas.android.com/apk/res/com.robertschaller.android.dtcalc" >
 	<TextView android:id="@+id/CalculatorDisplay" android:text="@string/display_empty" style="@style/Display" />
 	<LinearLayout android:id="@+id/ButtonsRow1"
 		android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -22,11 +26,20 @@
 	<LinearLayout android:id="@+id/ButtonsRow1"
 		android:layout_width="wrap_content" android:layout_height="wrap_content"
 		android:orientation="horizontal">
-		<Button android:text="@string/digit_7" android:id="@+id/Button7"
+		<com.robertschaller.android.dtcalc.buttons.DigitButton
+		  android:text="@string/digit_7"
+		  android:id="@+id/Button7"
+		  rs:value="7"
 			style="@style/DigitButton" />
-		<Button android:text="@string/digit_8" android:id="@+id/Button8"
+		<com.robertschaller.android.dtcalc.buttons.DigitButton
+		  android:text="@string/digit_8"
+		  android:id="@+id/Button8"
+			rs:value="8"
 			style="@style/DigitButton" />
-		<Button android:text="@string/digit_9" android:id="@+id/Button9"
+		<com.robertschaller.android.dtcalc.buttons.DigitButton
+		  android:text="@string/digit_9"
+		  android:id="@+id/Button9"
+		  rs:value="9"
 			style="@style/DigitButton" />
 		<Button android:text="@string/calc_division" android:id="@+id/ButtonDivision"
 			style="@style/OperationButton" />
@@ -38,11 +51,20 @@
 	<LinearLayout android:id="@+id/ButtonsRow2"
 		android:layout_width="wrap_content" android:layout_height="wrap_content"
 		android:orientation="horizontal">
-		<Button android:text="@string/digit_4" android:id="@+id/Button4"
+		<com.robertschaller.android.dtcalc.buttons.DigitButton
+		  android:text="@string/digit_4"
+		  android:id="@+id/Button4"
+		  rs:value="4"
 			style="@style/DigitButton" />
-		<Button android:text="@string/digit_5" android:id="@+id/Button5"
+		<com.robertschaller.android.dtcalc.buttons.DigitButton
+		  android:text="@string/digit_5"
+		  android:id="@+id/Button5"
+		  rs:value="5"
 			style="@style/DigitButton" />
-		<Button android:text="@string/digit_6" android:id="@+id/Button6"
+		<com.robertschaller.android.dtcalc.buttons.DigitButton
+		  android:text="@string/digit_6"
+		  android:id="@+id/Button6"
+		  rs:value="6"
 			style="@style/DigitButton" />
 		<Button android:text="@string/calc_multiplication" android:id="@+id/ButtonMultiplication"
 			style="@style/OperationButton" />
@@ -54,11 +76,20 @@
 	<LinearLayout android:id="@+id/ButtonsRow3"
 		android:layout_width="wrap_content" android:layout_height="wrap_content"
 		android:orientation="horizontal">
-		<Button android:text="@string/digit_1" android:id="@+id/Button1"
+		<com.robertschaller.android.dtcalc.buttons.DigitButton
+		  android:text="@string/digit_1"
+		  android:id="@+id/Button1"
+		  rs:value="1"
 			style="@style/DigitButton" />
-		<Button android:text="@string/digit_2" android:id="@+id/Button2"
+		<com.robertschaller.android.dtcalc.buttons.DigitButton
+		  android:text="@string/digit_2"
+		  android:id="@+id/Button2"
+		  rs:value="2"
 			style="@style/DigitButton" />
-		<Button android:text="@string/digit_3" android:id="@+id/Button3"
+		<com.robertschaller.android.dtcalc.buttons.DigitButton
+		  android:text="@string/digit_3"
+		  android:id="@+id/Button3"
+		  rs:value="3"
 			style="@style/DigitButton" />
 		<Button android:text="@string/calc_subtraction" android:id="@+id/ButtonSubtraction"
 			style="@style/OperationButton" />
@@ -70,7 +101,10 @@
 	<LinearLayout android:id="@+id/ButtonsRow4"
 		android:layout_width="wrap_content" android:layout_height="wrap_content"
 		android:orientation="horizontal">
-		<Button android:text="@string/digit_0" android:id="@+id/Button0"
+		<com.robertschaller.android.dtcalc.buttons.DigitButton
+		  android:text="@string/digit_0"
+		  android:id="@+id/Button0"
+		  rs:value="0"
 			style="@style/DigitButton" />
 		<Button android:text="@string/plus_minus" android:id="@+id/ButtonPlusMinus"
 			style="@style/OperationButton" />

@@ -38,5 +38,9 @@
     <!-- display -->
 
     <string name="display_empty">0.</string>
+    
+    <declare-styleable name="DigitButton">
+			<attr name="value" format="integer"/>
+    </declare-styleable>
 
 </resources>
