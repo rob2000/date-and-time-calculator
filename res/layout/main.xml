@@ -1,20 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
-  android:id="@+id/TableLayoutCalculator"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-  <TableRow android:id="@+id/ButtonRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-    <Button android:text="@+id/Button7" android:id="@+id/Button7" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-    <Button android:text="@+id/Button8" android:id="@+id/Button8" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-    <Button android:text="@+id/Button9" android:id="@+id/Button9" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-  </TableRow>
-  <TableRow android:id="@+id/ButtonRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
-    <Button android:text="@+id/Button7" android:text="@string/7_digit" android:id="@+id/Button7" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-    <Button android:text="@+id/Button8" android:id="@+id/Button8" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-    <Button android:text="@+id/Button9" android:id="@+id/Button9" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-  </TableRow>
-  <TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
-  <TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
-
-</TableLayout>
+<LinearLayout android:id="@+id/TableLayoutCalculator"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:id="@+id/CalculatorDisplay" android:text="@string/display_empty" style="@style/Display" />
+	<LinearLayout android:id="@+id/ButtonsRow1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button android:text="@string/mem_clear" android:id="@+id/ButtonMemClear"
+			style="@style/MemButton" />
+		<Button android:text="@string/mem_reset" android:id="@+id/ButtonMemReset"
+			style="@style/MemButton" />
+		<Button android:text="@string/mem_store" android:id="@+id/ButtonMemStore"
+			style="@style/MemButton" />
+		<Button android:text="@string/mem_add" android:id="@+id/ButtonMemAdd"
+			style="@style/MemButton" />
+		<Button android:text="@string/unit_second" android:id="@+id/ButtonUnitSecond"
+			style="@style/UnitButton" />
+		<Button android:text="@string/unit_week" android:id="@+id/ButtonUnitWeek"
+			style="@style/UnitButton" />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/ButtonsRow1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button android:text="@string/digit_7" android:id="@+id/Button7"
+			style="@style/DigitButton" />
+		<Button android:text="@string/digit_8" android:id="@+id/Button8"
+			style="@style/DigitButton" />
+		<Button android:text="@string/digit_9" android:id="@+id/Button9"
+			style="@style/DigitButton" />
+		<Button android:text="@string/calc_division" android:id="@+id/ButtonDivision"
+			style="@style/OperationButton" />
+		<Button android:text="@string/unit_minute" android:id="@+id/ButtonUnitMinute"
+			style="@style/UnitButton" />
+		<Button android:text="@string/unit_month" android:id="@+id/ButtonUnitMonth"
+			style="@style/UnitButton" />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/ButtonsRow2"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button android:text="@string/digit_4" android:id="@+id/Button4"
+			style="@style/DigitButton" />
+		<Button android:text="@string/digit_5" android:id="@+id/Button5"
+			style="@style/DigitButton" />
+		<Button android:text="@string/digit_6" android:id="@+id/Button6"
+			style="@style/DigitButton" />
+		<Button android:text="@string/calc_multiplication" android:id="@+id/ButtonMultiplication"
+			style="@style/OperationButton" />
+		<Button android:text="@string/unit_hour" android:id="@+id/ButtonUnitHour"
+			style="@style/UnitButton" />
+		<Button android:text="@string/unit_year" android:id="@+id/ButtonUnitYear"
+			style="@style/UnitButton" />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/ButtonsRow3"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button android:text="@string/digit_1" android:id="@+id/Button1"
+			style="@style/DigitButton" />
+		<Button android:text="@string/digit_2" android:id="@+id/Button2"
+			style="@style/DigitButton" />
+		<Button android:text="@string/digit_3" android:id="@+id/Button3"
+			style="@style/DigitButton" />
+		<Button android:text="@string/calc_subtraction" android:id="@+id/ButtonSubtraction"
+			style="@style/OperationButton" />
+		<Button android:text="@string/unit_day" android:id="@+id/ButtonUnitDay"
+			style="@style/UnitButton" />
+		<Button android:text="@string/date" android:id="@+id/ButtonDate"
+			style="@style/UnitButton" />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/ButtonsRow4"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button android:text="@string/digit_0" android:id="@+id/Button0"
+			style="@style/DigitButton" />
+		<Button android:text="@string/plus_minus" android:id="@+id/ButtonPlusMinus"
+			style="@style/OperationButton" />
+		<Button android:text="@string/decimal_point" android:id="@+id/ButtonDecimalPoint"
+			style="@style/DigitButton" />
+		<Button android:text="@string/calc_addition" android:id="@+id/ButtonAddition"
+			style="@style/OperationButton" />
+		<Button android:text="@string/enter" android:id="@+id/ButtonEnter"
+			android:width="100dp" style="@style/OperationButton" />
+	</LinearLayout>
+</LinearLayout>

@@ -2,4 +2,41 @@
 <resources>
     <string name="hello">Hello World, DateAndTimeCalculatorActivity!</string>
     <string name="app_name">date and time calculator</string>
+    
+    <!-- buttons -->
+    
+    <string name="digit_9">9</string>
+    <string name="digit_8">8</string>
+    <string name="digit_7">7</string>
+    <string name="digit_6">6</string>
+    <string name="digit_5">5</string>
+    <string name="digit_4">4</string>
+    <string name="digit_3">3</string>
+    <string name="digit_2">2</string>
+    <string name="digit_1">1</string>
+    <string name="digit_0">0</string>
+    <string name="plus_minus">+/-</string>
+    <string name="decimal_point">.</string>
+    <string name="calc_division">/</string>
+    <string name="calc_multiplication">*</string>
+    <string name="calc_subtraction">-</string>
+    <string name="calc_addition">+</string>
+    <string name="mem_clear">MC</string>
+    <string name="mem_reset">MR</string>
+    <string name="mem_store">MS</string>
+    <string name="mem_add">M+</string>
+    <string name="unit_second">s</string>
+    <string name="unit_minute">m</string>
+    <string name="unit_hour">h</string>
+    <string name="unit_day">d</string>
+    <string name="unit_week">w</string>
+    <string name="unit_month">m</string>
+    <string name="unit_year">y</string>
+    <string name="date">dt</string>
+    <string name="enter">=</string>
+
+    <!-- display -->
+
+    <string name="display_empty">0.</string>
+
 </resources>
