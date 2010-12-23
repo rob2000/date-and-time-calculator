@@ -1,18 +1,14 @@
 package com.robertschaller.android.dtcalc.buttons;
 
-import java.util.Date;
 
 import com.robertschaller.android.dtcalc.Calculator;
-import com.robertschaller.android.dtcalc.DateAndTimeCalculatorActivity;
 import com.robertschaller.android.dtcalc.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 /**
  * The Class DigitButton.
