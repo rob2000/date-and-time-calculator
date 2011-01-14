@@ -19,7 +19,4 @@ public class Calculator {
   /** The STACK. */
   public static Stack STACK;
   
-  /** The PROCESSOR. */
-  public static Processor PROCESSOR;
-  
 }
