@@ -4,16 +4,14 @@ import org.joda.time.DateTime;
 import org.joda.time.Period;
 
 
-public class PlusOperator extends AbstractOperator {
+public class DivisionOperator {
 
-  @Override
-  public DateTime operate(DateTime firstValue, Period secondValue) {
+  public static DateTime operate(DateTime firstValue, Period secondValue) {
     // TODO Auto-generated method stub
     return null;
   }
 
-  @Override
-  public Period operate(Period firstValue, Period secondValue) {
+  public static Period operate(Period firstValue, Period secondValue) {
     // TODO Auto-generated method stub
     return null;
   }
