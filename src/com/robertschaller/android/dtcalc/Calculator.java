@@ -2,7 +2,6 @@ package com.robertschaller.android.dtcalc;
 
 import com.robertschaller.android.dtcalc.components.Display;
 import com.robertschaller.android.dtcalc.components.Memory;
-import com.robertschaller.android.dtcalc.components.Processor;
 import com.robertschaller.android.dtcalc.components.Stack;
 
 /**
