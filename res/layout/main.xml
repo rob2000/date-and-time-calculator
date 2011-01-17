@@ -129,7 +129,10 @@
 			style="@style/DigitButton" />
 		<Button android:text="@string/plus_minus" android:id="@+id/ButtonPlusMinus"
 			style="@style/OperationButton" />
-		<Button android:text="@string/decimal_point" android:id="@+id/ButtonDecimalPoint"
+		<com.robertschaller.android.dtcalc.buttons.ActionButton
+		  android:text="@string/decimal_point"
+		  android:id="@+id/ButtonDecimalPoint"
+		  rs:action="@string/action_decimal"
 			style="@style/DigitButton" />
 		<Button android:text="@string/calc_addition" android:id="@+id/ButtonAddition"
 			style="@style/OperationButton" />

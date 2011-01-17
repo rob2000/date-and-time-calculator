@@ -53,5 +53,9 @@
     <declare-styleable name="OperatorButton">
       <attr name="operation" format="string"/>
     </declare-styleable>
+    
+    <!-- action -->
+    
+    <string name="action_decimal">decimal</string>
 
 </resources>

@@ -67,6 +67,7 @@ public class DigitButton extends Button {
         Calculator.DISPLAY.setText( Calculator.DISPLAY.getText() + Integer.toString( value ) );
       }
     });
+    
   }
 
 }
